@@ -1,0 +1,12 @@
+D:\C#\ASP\Vaccine\Vaccine.Core\bin\Debug\net8.0\Vaccine.Core.deps.json
+D:\C#\ASP\Vaccine\Vaccine.Core\bin\Debug\net8.0\Vaccine.Core.dll
+D:\C#\ASP\Vaccine\Vaccine.Core\bin\Debug\net8.0\Vaccine.Core.pdb
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.csproj.AssemblyReference.cache
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.AssemblyInfoInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.AssemblyInfo.cs
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.csproj.CoreCompileInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.dll
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\refint\Vaccine.Core.dll
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\Vaccine.Core.pdb
+D:\C#\ASP\Vaccine\Vaccine.Core\obj\Debug\net8.0\ref\Vaccine.Core.dll

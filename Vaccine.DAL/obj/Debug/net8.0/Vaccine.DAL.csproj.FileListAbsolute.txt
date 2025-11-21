@@ -1,0 +1,15 @@
+D:\C#\ASP\Vaccine\Vaccine.DAL\bin\Debug\net8.0\Vaccine.DAL.deps.json
+D:\C#\ASP\Vaccine\Vaccine.DAL\bin\Debug\net8.0\Vaccine.DAL.dll
+D:\C#\ASP\Vaccine\Vaccine.DAL\bin\Debug\net8.0\Vaccine.DAL.pdb
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.AssemblyInfoInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.AssemblyInfo.cs
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.csproj.CoreCompileInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.dll
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\refint\Vaccine.DAL.dll
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.pdb
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\ref\Vaccine.DAL.dll
+D:\C#\ASP\Vaccine\Vaccine.DAL\bin\Debug\net8.0\Vaccine.Core.dll
+D:\C#\ASP\Vaccine\Vaccine.DAL\bin\Debug\net8.0\Vaccine.Core.pdb
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine.DAL.csproj.AssemblyReference.cache
+D:\C#\ASP\Vaccine\Vaccine.DAL\obj\Debug\net8.0\Vaccine..2C4580F9.Up2Date

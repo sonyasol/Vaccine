@@ -1,0 +1,14 @@
+﻿@using Vaccine.Core.OutputModel
+
+<div class="card border-primary mb-3" style="width: 18rem; margin: 0px 10px 10px 0px;">
+  <div class="card-body">
+    <h5 class="card-title">@Vaccine.Title</h5>
+    <p class="card-text">@Vaccine.VaccineType.ToString()</p>
+    <a href="/@Vaccine.Id" class="btn btn-outline-primary">Подбробнее</a>
+  </div>
+</div>
+
+@code {
+    [Parameter]
+    public VaccineOutputModel Vaccine{ get; set; }
+}

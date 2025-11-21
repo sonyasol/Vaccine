@@ -1,0 +1,37 @@
+﻿@page "/login"
+@using System.Security.Claims;
+@using Microsoft.AspNetCore.Authentication;
+@using Microsoft.AspNetCore.Authentication.Cookies;
+
+<h3>Login</h3>
+
+<EditForm Model="loginModel" OnSubmit="StartLogin" FormName="Login">
+	<InputText @bind-Value="loginModel.Name"></InputText>
+	<InputText @bind-Value="loginModel.Password"></InputText>
+	<button type="submit">Войти</button>
+</EditForm>
+
+@code {
+	[CascadingParameter]
+	public HttpContext httpContext { get; set; }
+
+	[SupplyParameterFromForm]
+	public LoginModel loginModel { get; set; } = new LoginModel();
+
+	public async void StartLogin()
+	{
+
+		// проверка логина и пароля
+
+		var claims = new List<Claim>()
+		{
+			new Claim("Имя", loginModel.Name),
+			new Claim(ClaimTypes.Role, "Врач")
+		};
+
+		var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);  //схема шифрования 
+		var pr = new ClaimsPrincipal(identity); 
+
+		await httpContext.SignInAsync(pr); 
+	}
+}

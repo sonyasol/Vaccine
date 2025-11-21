@@ -1,0 +1,155 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Authorization
+@* @inject VaccineService VaccineService *@
+@rendermode InteractiveServer
+
+<AuthorizeView>
+	<Authorized>
+		<p>Врач авторизован</p>
+	</Authorized>
+	<NotAuthorized>
+		<p>Авторизуйтесь!</p>
+	</NotAuthorized>
+</AuthorizeView>
+
+
+<PageTitle>Home</PageTitle>  //1:36:00 как на странице клиента (не сработало на 1:44:00)
+
+<div>
+	
+	<p>Поиск по названию:</p>
+	<InputText @bind-Value="searchVaccine"></InputText>
+	<button @onclick="OnFilter" type="button" class="btn btn-outline-primary" style="color:darkblue; font-size:medium" >Поиск</button>
+	
+	<p>Поиск по категории:</p>
+	<InputSelect @bind-Value="vaccineType" @onclick="OnFilter" >  // урок работа с формами 1:32:00 как выводить людей по Id
+		<option value="-1">Все</option>
+		<option value="@((int)VaccineType.Грипп)">Грипп</option>
+		<option value="@((int)VaccineType.Столбняк)">Столбняк</option>
+		<option value="@((int)VaccineType.ВПЧ)">ВПЧ</option>
+		<option value="@((int)VaccineType.Дифтерия)">Дифтерия</option>
+		<option value="@((int)VaccineType.Гепатит_В)">Гепатит В</option>
+	</InputSelect>
+</div>
+
+<h1><p>Список доступных вакцин:</p></h1>
+
+<div class="container" style="display: flex; flex-wrap: wrap; accent-color">
+
+	@foreach(var v in filtredVaccines)
+	{
+		<VaccineInfo Vaccine="v"/>
+	}
+
+</div>
+
+@* 1:48:00 как добавить вакцину/пациента в БД - модальное окно *@
+
+<button @onclick="ShowModal">Добавить вакцину</button>
+
+
+@if(isModalShowed)
+{
+	<div class="modal show d-block" tabindex="-1" style="background: rgba(0,0,0,0.5)">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Добавление вакцины</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="HideModal"></button>
+				</div>
+				<EditForm Model="vaccine" OnValidSubmit="OnSubmit">
+					<DataAnnotationsValidator></DataAnnotationsValidator>
+				<div class="modal-body">
+						@* // 2:14:00 строки заполнять как *@
+						<div>
+							<span>Название</span>
+							<InputText @bind-Value="vaccine.Title"/>
+							<ValidationMessage For="() => vaccine.Title"/>
+						</div>
+						<div>
+							<span>Категория</span>
+							<InputSelect @bind-Value="vaccine.VaccineType">
+								<option value="@VaccineType.Грипп">Грипп</option>
+								<option value="@VaccineType.Столбняк">Столбняк</option>
+								<option value="@VaccineType.ВПЧ">ВПЧ</option>
+								<option value="@VaccineType.Дифтерия">Дифтерия</option>
+								<option value="@VaccineType.Гепатит_В">Гепатит В</option>
+							</InputSelect>
+						</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="HideModal">Close</button>
+					<button type="submit" class="btn btn-primary">Save changes</button>
+				</div>
+				</EditForm>
+			</div>
+		</div>
+	</div>
+}
+
+
+// инпутдата - ввести дату вакцины
+// инпутселект - выбрать какая именно вакцина
+
+@code{
+	[Inject]
+	public VaccineService VaccineService { get; set; }
+
+	private List<VaccineOutputModel> vaccines;
+
+	private List<VaccineOutputModel> filtredVaccines;
+
+	private string searchVaccine;
+	private int vaccineType;
+
+	private bool isModalShowed;
+
+	private VaccineInputModel vaccine;
+
+	protected override void OnInitialized()
+	{
+		vaccines = VaccineService.GetAll();
+		filtredVaccines = vaccines;
+		searchVaccine = "";
+		vaccineType = -1;
+	}
+
+	private void OnFilter()
+	{
+		string tmp = searchVaccine.Trim().ToLower();
+		filtredVaccines = vaccines.Where(v => v.Title.ToLower().Contains(tmp)).ToList();
+
+		if(vaccineType != -1)
+		{
+			filtredVaccines = filtredVaccines.Where(v => v.VaccineType == (VaccineType)vaccineType).ToList();
+		}
+
+		StateHasChanged();
+	}
+
+	private void ShowModal()
+	{
+		vaccine = new VaccineInputModel()
+			{
+				VaccineType = VaccineType.Грипп
+			};
+
+		isModalShowed = true;
+	}
+
+	private void HideModal()
+	{
+		isModalShowed = false;
+	}
+
+	private void OnSubmit()
+	{
+		// 2:46:40 добавление в базу данных
+	}
+}
+
+	@* 	2:27:00 проверка заполненных полей *@
+
+@* 		Большая практика - z остановилась на 1:23:00 *@
+
+		@* 1:56:30 теория по API - запись API основыне понятия  *@

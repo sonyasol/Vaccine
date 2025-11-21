@@ -1,0 +1,23 @@
+﻿@page "/users"
+@inject UserBLL UserBLL
+
+<PageTitle>Пациенты</PageTitle>
+
+<h1><p>Список пациентов:</p></h1>
+
+<div @* style="display: flex; flex-wrap: wrap; accent-color" *@>
+
+	@foreach (var u in UserBLL.GetAll())
+	{
+		@* <h3>@v.Name</h3> *@
+		<PatientsInfo Patient="u" />
+	}
+
+<p class="btn btn-outline-primary">Добавить пациента</p>
+
+</div>
+
+
+@code {
+
+}

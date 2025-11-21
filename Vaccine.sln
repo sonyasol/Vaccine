@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.Web", "Vaccine.Web\Vaccine.Web\Vaccine.Web.csproj", "{BB98F123-4F88-4D73-B6B6-43BA856D60B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C} = {AF24C246-6CE6-4D66-8AB1-4682F730115C}
+		{B7C837F0-995A-46B9-9464-609C2607CC03} = {B7C837F0-995A-46B9-9464-609C2607CC03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.Web.Client", "Vaccine.Web\Vaccine.Web.Client\Vaccine.Web.Client.csproj", "{A786E8E0-42D8-4356-B3E4-72945ED4A75C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E} = {92DE6823-C56C-4A8E-A783-70C8AE91470E}
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C} = {AF24C246-6CE6-4D66-8AB1-4682F730115C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.DAL", "Vaccine.DAL\Vaccine.DAL.csproj", "{92DE6823-C56C-4A8E-A783-70C8AE91470E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7C837F0-995A-46B9-9464-609C2607CC03} = {B7C837F0-995A-46B9-9464-609C2607CC03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.BLL", "Vaccine.BLL\Vaccine.BLL.csproj", "{AF24C246-6CE6-4D66-8AB1-4682F730115C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E} = {92DE6823-C56C-4A8E-A783-70C8AE91470E}
+		{B7C837F0-995A-46B9-9464-609C2607CC03} = {B7C837F0-995A-46B9-9464-609C2607CC03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.Core", "Vaccine.Core\Vaccine.Core.csproj", "{B7C837F0-995A-46B9-9464-609C2607CC03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForDebug", "ForDebug\ForDebug.csproj", "{DAA569FF-6C0D-4B39-9C48-CB3B8D961DA9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E} = {92DE6823-C56C-4A8E-A783-70C8AE91470E}
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C} = {AF24C246-6CE6-4D66-8AB1-4682F730115C}
+		{B7C837F0-995A-46B9-9464-609C2607CC03} = {B7C837F0-995A-46B9-9464-609C2607CC03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine.API", "Vaccine.API\Vaccine.API.csproj", "{40B24319-F7F9-4FDC-9493-0737C2812D36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB98F123-4F88-4D73-B6B6-43BA856D60B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB98F123-4F88-4D73-B6B6-43BA856D60B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB98F123-4F88-4D73-B6B6-43BA856D60B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB98F123-4F88-4D73-B6B6-43BA856D60B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A786E8E0-42D8-4356-B3E4-72945ED4A75C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A786E8E0-42D8-4356-B3E4-72945ED4A75C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A786E8E0-42D8-4356-B3E4-72945ED4A75C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A786E8E0-42D8-4356-B3E4-72945ED4A75C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DE6823-C56C-4A8E-A783-70C8AE91470E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF24C246-6CE6-4D66-8AB1-4682F730115C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C837F0-995A-46B9-9464-609C2607CC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C837F0-995A-46B9-9464-609C2607CC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C837F0-995A-46B9-9464-609C2607CC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C837F0-995A-46B9-9464-609C2607CC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA569FF-6C0D-4B39-9C48-CB3B8D961DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA569FF-6C0D-4B39-9C48-CB3B8D961DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA569FF-6C0D-4B39-9C48-CB3B8D961DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA569FF-6C0D-4B39-9C48-CB3B8D961DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B24319-F7F9-4FDC-9493-0737C2812D36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B24319-F7F9-4FDC-9493-0737C2812D36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B24319-F7F9-4FDC-9493-0737C2812D36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B24319-F7F9-4FDC-9493-0737C2812D36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EDB97AB-0234-4342-9D3D-0E893F1B8003}
+	EndGlobalSection
+EndGlobal

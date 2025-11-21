@@ -1,0 +1,15 @@
+D:\C#\ASP\Vaccine\Vaccine.BLL\bin\Debug\net8.0\Vaccine.BLL.deps.json
+D:\C#\ASP\Vaccine\Vaccine.BLL\bin\Debug\net8.0\Vaccine.BLL.dll
+D:\C#\ASP\Vaccine\Vaccine.BLL\bin\Debug\net8.0\Vaccine.BLL.pdb
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.AssemblyInfoInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.AssemblyInfo.cs
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.csproj.CoreCompileInputs.cache
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.dll
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\refint\Vaccine.BLL.dll
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.pdb
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\ref\Vaccine.BLL.dll
+D:\C#\ASP\Vaccine\Vaccine.BLL\bin\Debug\net8.0\Vaccine.Core.dll
+D:\C#\ASP\Vaccine\Vaccine.BLL\bin\Debug\net8.0\Vaccine.Core.pdb
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine.BLL.csproj.AssemblyReference.cache
+D:\C#\ASP\Vaccine\Vaccine.BLL\obj\Debug\net8.0\Vaccine..42E277A3.Up2Date
